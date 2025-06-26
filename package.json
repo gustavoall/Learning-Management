@@ -2,18 +2,24 @@
   "name": "workout-lms",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "gulp",
+    "build": "rollup -c && gulp styles && gulp html"
   },
   "devDependencies": {
-    "sass": "^1.89.2",
-    "vite": "^6.3.5"
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "gulp": "^5.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-terser": "^2.1.0",
+    "rollup": "^4.44.0",
+    "rollup-plugin-copy": "^3.5.0",
+    "sass": "^1.89.2"
   },
   "dependencies": {
-    "bootstrap": "^5.3.7",
-    "swiper": "^11.2.8"
+    "@splidejs/splide": "^4.1.4",
+    "bootstrap": "^5.3.7"
   }
 }
